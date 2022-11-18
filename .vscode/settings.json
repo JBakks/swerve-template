@@ -3,6 +3,7 @@
   "java.server.launchMode": "Standard",
   "files.exclude": {
     "**/.git": true,
+    "git.path": "C:\Program Files\Git",
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
