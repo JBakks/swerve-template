@@ -222,11 +222,11 @@ public class DrivetrainSubsystem extends SubsystemBase {
                 m_backRightModule.set(states[3].speedMetersPerSecond / MAX_VELOCITY_METERS_PER_SECOND * MAX_VOLTAGE,
                                 states[3].angle.getRadians());
 
-                SmartDashboard.putNumber("Front Left Encoder", m_frontLeftModule.getSteerAngle());
-                SmartDashboard.putNumber("Front Right Encoder", m_frontRightModule.getSteerAngle());
-                SmartDashboard.putNumber("Back Left Encoder", m_backLeftModule.getSteerAngle());
-                SmartDashboard.putNumber("Back Right Encoder", m_backRightModule.getSteerAngle());
-                SmartDashboard.putNumber("Gyro Heading", getGyroscopeRotation().getDegrees());
-                SmartDashboard.putNumber("Offset value", gyroOffset);
+                //SmartDashboard.putNumber("Front Left Encoder", m_frontLeftModule.getSteerAngle());
+                //SmartDashboard.putNumber("Front Right Encoder", m_frontRightModule.getSteerAngle());
+                //SmartDashboard.putNumber("Back Left Encoder", m_backLeftModule.getSteerAngle());
+                //SmartDashboard.putNumber("Back Right Encoder", m_backRightModule.getSteerAngle());
+                //SmartDashboard.putNumber("Gyro Heading", getGyroscopeRotation().getDegrees());
+                //SmartDashboard.putNumber("Offset value", gyroOffset);
         }
 }
