@@ -54,5 +54,7 @@ public class DrivetrainSubsystem extends SubsystemBase {
         @Override
         public void periodic() {
                 SmartDashboard.putNumber("CANCoder", encoder.getPosition());
+                SmartDashboard.putNumber("CANCoder number of revolutions", encoder.getPosition()/4096);
+                SmartDashboard.putNumber("CANCoder number of revolutions", (encoder.getPosition()/4096) * 360);
         }
 }
