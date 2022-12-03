@@ -4,6 +4,7 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix.sensors.CANCoder;
 import com.ctre.phoenix.sensors.PigeonIMU;
 import com.kauailabs.navx.frc.AHRS;
 import com.swervedrivespecialties.swervelib.Mk3SwerveModuleHelper;
@@ -81,6 +82,9 @@ public class DrivetrainSubsystem extends SubsystemBase {
 
         // These are our modules. We initialize them in the constructor.
         private final SwerveModule m_frontLeftModule;
+        
+
+
         private final SwerveModule m_frontRightModule;
         private final SwerveModule m_backLeftModule;
         private final SwerveModule m_backRightModule;
