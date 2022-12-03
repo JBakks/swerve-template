@@ -35,8 +35,8 @@ import java.util.function.DoubleSupplier;
 public class DrivetrainSubsystem extends SubsystemBase {
        
 
-        CANCoder encoder = new CANCoder(FRONT_LEFT_MODULE_STEER_ENCODER);
-        private TalonFX motor = new TalonFX(FRONT_LEFT_MODULE_STEER_MOTOR);
+        CANCoder encoder = new CANCoder(BACK_LEFT_MODULE_STEER_ENCODER);
+        private TalonFX motor = new TalonFX(BACK_LEFT_MODULE_STEER_MOTOR);
         // private final SwerveModule m_frontRightModule;
         // private final SwerveModule m_backLeftModule;
         
@@ -55,6 +55,6 @@ public class DrivetrainSubsystem extends SubsystemBase {
         public void periodic() {
                 SmartDashboard.putNumber("CANCoder", encoder.getPosition());
                 SmartDashboard.putNumber("CANCoder number of revolutions", encoder.getPosition()/4096);
-                SmartDashboard.putNumber("CANCoder number of revolutions", (encoder.getPosition()/4096) * 360);
+                SmartDashboard.putNumber("CANCoder angle", (encoder.getPosition()/4096) * 360);
         }
 }
